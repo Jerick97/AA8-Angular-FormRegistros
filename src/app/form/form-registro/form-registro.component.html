@@ -27,8 +27,11 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-
+          <tr *ngFor="let alumno of registros">
+                <th>{{alumno["name"]}}</th>
+                <th>{{alumno["surname"]}}</th>
+                <th>{{alumno["age"]}}</th>
+                <th>{{alumno["validar"]}}</th>
           </tr>
         </tbody>
       </table>
