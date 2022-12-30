@@ -18,7 +18,7 @@ export class FormRegistroComponent implements OnInit {
   registros : any = [];
 
   guardarDatos(name:string, surname:string, age:string){
-    let validar =  Number(age) >= 18 ? name +` es Mayor de Edad` : name +` es Menor de Edad` ;
+    let validar =  Number(age) >= 18 ? `${name} es Mayor de Edad` : `${name} es Menor de Edad` ;
     this.registros.push({name,surname,age,validar});
   }
 
