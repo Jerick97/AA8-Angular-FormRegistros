@@ -12,4 +12,14 @@ export class FormRegistroComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  nombre : string = "";
+  apellidos : string = "";
+  edad : string = "";
+  registros : string[] = [];
+
+  obtenerDatos(name:string, surname:string, age:string){
+      this.nombre = name,
+      this.apellidos = surname;
+      this.edad = age;
+  }
 }
